@@ -1,0 +1,35 @@
+# AI Recipe Generator
+
+A Laravel built web app that creates simple, easy to make recipes from user submitted ingredients using OpenAI's GPT model.
+
+## Features
+- Ingredient input form
+- AI-powered recipe generation (title, ingredients, instructions)
+- Error handling for API failures
+
+## Setup Instructions
+
+1. Clone repo
+    ```
+    git clone https://github.com/your-username/blog-ai.git
+    cd blog-ai
+    ```
+2. Install dependencies
+    ```
+    composer install
+    npm install && npm run dev
+    ```
+3. Configure .env file  
+   Copy `.env.example` into a new `.env` file. Update OpenAI API key.
+    ```
+    OPENAI_API_KEY=your_openai_api_key_here
+    OPENAI_API_URL=https://api.openai.com/v1
+    OPENAI_MODEL=gpt-3.5-turbo
+    ```
+4. Run the application
+    ```
+    php artisan serve
+    ```
+5. Visit `http://localhost:8000/recipes`
+
+![img](/public/app_example.png)
